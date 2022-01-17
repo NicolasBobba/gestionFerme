@@ -19,6 +19,7 @@ public class Ferme {
 	private Long idFerme;
 	private String nom;
 	private int salaire;
+	private int nbSalarie;
 	
 	@Temporal(TemporalType.DATE)
 	private Date dateAchat;
