@@ -18,6 +18,7 @@ public class Ferme {
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long idFerme;
 	private String nom;
+	private int salaire;
 	
 	@Temporal(TemporalType.DATE)
 	private Date dateAchat;
