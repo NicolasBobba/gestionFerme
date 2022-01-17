@@ -14,7 +14,7 @@ public class Gerant {
 	private String nom;
 	private String prenom;
 	@ManyToOne
-	private Ferme fermeG;
+	private Ferme ferme;
 	
 	public Gerant() {
 		
@@ -23,7 +23,7 @@ public class Gerant {
 	public Gerant(String nom, String prenom, Ferme ferme) {
 		this.nom = nom;
 		this.prenom = prenom;
-		this.fermeG = ferme;
+		this.ferme = ferme;
 	}
 
 	public Long getIdGerant() {
@@ -50,12 +50,12 @@ public class Gerant {
 		this.prenom = prenom;
 	}
 
-	public Ferme getFermeG() {
-		return fermeG;
+	public Ferme getFerme() {
+		return ferme;
 	}
 
-	public void setFermeG(Ferme ferme) {
-		this.fermeG = ferme;
+	public void setFerme(Ferme ferme) {
+		this.ferme = ferme;
 	}
 
 	@Override

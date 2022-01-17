@@ -9,6 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Ferme {
@@ -16,6 +18,8 @@ public class Ferme {
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long idFerme;
 	private String nom;
+	
+	@Temporal(TemporalType.DATE)
 	private Date dateAchat;
 	
 	@OneToMany (mappedBy = "ferme")
